@@ -1,13 +1,13 @@
-int second[] = {2, 3, 4, 5, 6, 19}; // second[0] is LSB
-int minute[] = {18, 17, 16, 15, 7, 8}; // minute[0] is LSB
-int hour[] = {11, 10, 9}; // hour[0] is LSB
-int pins[] = {2, 3, 4, 5, 6, 19, 18, 17, 16, 15, 7, 8, 9, 10, 11};
-int button[] = {12, 13};
+// Set up Pins
+const int second[] = {2, 3, 4, 5, 6, 19};                                 // second[0] is the least significant byte
+const int minute[] = {18, 17, 16, 15, 7, 8};                              // minute[0] is least significant byte
+const int hour[] = {11, 10, 9};                                           // hour[0] is least significant byte
+const int pins[] = {2, 3, 4, 5, 6, 19, 18, 17, 16, 15, 7, 8, 9, 10, 11};
+const int button[] = {12, 13};
 
 enum set {
   normal,
   stopwatch,
-  //timer
 };
 set mode = normal;
 
